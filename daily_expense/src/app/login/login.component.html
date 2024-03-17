@@ -1,0 +1,64 @@
+<div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-md">
+        <mat-tab-group > 
+            <mat-tab label="Login">
+                <!-- Login form fields -->
+                <!-- Your login form fields here -->
+                <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+                    <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+                        <form class="space-y-6" (ngSubmit)="login()">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                                <input name="email" type="email" autocomplete="email" [(ngModel)]="logEmail" required
+                                    class="mt-1 focus:ring-indigo-100 focus:border-indigo-100 block w-full shadow-sm sm:text-sm border-gray-100 rounded-md">
+                            </div>
+
+                            <div>
+                                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                                <input name="password" type="password" autocomplete="current-password" [(ngModel)]="logPass"
+                                    required
+                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+
+                            <div>
+                                <button type="submit"
+                                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Sign in
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="Sign Up">
+                <!-- Signup form fields -->
+                <!-- Your signup form fields here -->
+                <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+                    <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+                        <form class="space-y-6" (ngSubmit)="signup()">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                                <input  name="email" type="text" autocomplete="email" required [(ngModel)]="signEmail"
+                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+
+                            <div>
+                                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                                <input  name="password" type="password" autocomplete="current-password" [(ngModel)]="signPass"
+                                    required
+                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+
+                            <div>
+                                <button type="submit"
+                                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Sign up
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>
