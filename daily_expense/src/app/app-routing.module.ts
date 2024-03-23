@@ -8,13 +8,13 @@ import { ViewExpComponent } from './view-exp/view-exp.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'new-expense', component:NewExpComponent },
-  {path:'home',component:HomeComponent},
-  {path:'view-exp',component:ViewExpComponent}
+  { path: 'new-expense', component: NewExpComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'view-exp', component: ViewExpComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

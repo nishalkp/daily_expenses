@@ -1,6 +1,6 @@
 <div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
-        <mat-tab-group > 
+        <mat-tab-group>
             <mat-tab label="Login">
                 <!-- Login form fields -->
                 <!-- Your login form fields here -->
@@ -15,8 +15,8 @@
 
                             <div>
                                 <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                                <input name="password" type="password" autocomplete="current-password" [(ngModel)]="logPass"
-                                    required
+                                <input name="password" type="password" autocomplete="current-password"
+                                    [(ngModel)]="logPass" required
                                     class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                             </div>
 
@@ -38,14 +38,14 @@
                         <form class="space-y-6" (ngSubmit)="signup()">
                             <div>
                                 <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
-                                <input  name="email" type="text" autocomplete="email" required [(ngModel)]="signEmail"
+                                <input name="email" type="text" autocomplete="email" required [(ngModel)]="signEmail"
                                     class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                             </div>
 
                             <div>
                                 <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                                <input  name="password" type="password" autocomplete="current-password" [(ngModel)]="signPass"
-                                    required
+                                <input name="password" type="password" autocomplete="current-password"
+                                    [(ngModel)]="signPass" required
                                     class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                             </div>
 
